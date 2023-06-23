@@ -22,11 +22,11 @@ export default function NavElem( {handler}){
 function Element(props){
     return(
         <Box p={3}
-            maxW={"16.66vw"}
-            fontSize={"calc(0.5em + 1vw)"}
+        maxW={"16.66vw"}
+        fontSize={"calc(0.5em + 1vw)"}
+        //onClick={() => props.handler(props.name)}
         >
-            <Link href={props.src}>{props.name}</Link>
-        </Box>
+        <Link href={props.src}>{props.name}</Link>
+      </Box>
     )
 }
-
