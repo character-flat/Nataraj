@@ -22,6 +22,7 @@ export default function TextHead() {
                 maxHeight: "10%",
                 objectFit: "fill",  
                 padding: "5vw",
+                width: "100%",
 
               }}
           >

@@ -10,6 +10,8 @@ export default function Image() {
             maxWidth: "100vw",
             maxHeight: "10%",
             objectFit: "fill",
+            
+            width: "100%",
             WebkitMaskImage:
             "radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%)",
           maskImage:

@@ -1,5 +1,13 @@
+import { render } from "react-dom";
+import About from "./About/about";
+import Achievements from "./achievements/achievements";
+import Roadmap from "./roadmap/roadmap";
+import Notes from "./notes/notes";
+import Contact from "./contact/contact";
+import Gallery from "./gallery/gallery";
 import BigText from "./BigText/bigtext";
 import Features from "./features/features";
+import {Route, Routes } from "react-router-dom";
 function Home() {
     return (
         <>
@@ -8,76 +16,21 @@ function Home() {
         </>
     );
 }
+export default function Content() {
+   
+   return (
+         <div>
+              <Routes>
+                <Route exact path="/" element={<Home/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/contact" element={<Contact/>} />
+                <Route path="/roadmap" element={<Roadmap/>} />
+                <Route path="/gallery" element={<Gallery/>} />
+                <Route path="/achievements" element={<Achievements/>} />
+                <Route path="/notes" element={<Notes/>} />
 
-function About() {
-    return (
-        <>
-        <h1>About</h1>
-        </>
-    );
-}
-
-function Achievements() {
-    return (
-        <>
-        <h1>Achievements</h1>
-        </>
-    );
-}
-
-function Roadmap() {
-    return (
-        <>
-        <h1>Roadmap</h1>
-        </>
-    );
-}
-
-function Notes() {
-    return (
-        <>
-        <h1>Notes</h1>
-        </>
-    );
-}
-
-function Contact() {
-    return (
-        <>
-        <h1>Contact</h1>
-        </>
-    );
-}
-
-export default function Content({ currentPage}) {
-    var content;
-    switch (currentPage) {
-        case "home":
-        content = <Home />;
-        break;
-        case "about":
-        content = <About />;
-        break;
-        case "achievements":
-        content = <Achievements />;
-        break;
-        case "roadmap":
-        content = <Roadmap />;
-        break;
-        case "notes":
-        content = <Notes />;
-        break;
-        case "contact":
-        content = <Contact />;
-        break;
-        default:
-        content = <Home />;
-        break;
-    }
-    return (
-        <>
-        {content}
-        </>
+            </Routes>
+        </div>
     );
     
 }
