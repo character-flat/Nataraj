@@ -24,7 +24,6 @@ export default function Content() {
                 <Route exact path="/" element={<Home/>} />
                 <Route path="/about" element={<About/>} />
                 <Route path="/contact" element={<Contact/>} />
-                <Route path="/roadmap" element={<Roadmap/>} />
                 <Route path="/gallery" element={<Gallery/>} />
                 <Route path="/achievements" element={<Achievements/>} />
                 <Route path="/notes" element={<Notes/>} />

@@ -5,7 +5,7 @@ import Footer from './components/Footer/footer';
 import Content from './components/Content/content';
 import {BrowserRouter} from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
     <Flex direction="column" flex="1">
       <Navbar/>
@@ -37,4 +37,4 @@ function App() {
     // );
   
   }
-export default App;
+
