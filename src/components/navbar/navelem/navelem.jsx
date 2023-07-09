@@ -9,7 +9,6 @@ export default function NavElem( {handler}){
         <Element  name = "About Us" src="/about"/>
         <Element  name = "Achievements" src="/achievements" />
         <Element  name = "Gallery" src="/gallery" />
-        <Element  name = "Roadmap" src="/roadmap" />
         <Element  name = "Notes" src="/notes" />
         <Element  name = "Contact Us" src="/contact" />
         <div style={{display:"none"}}>

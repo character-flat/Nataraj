@@ -2,7 +2,17 @@ import { Text, Image, Container } from "@chakra-ui/react";
 export default function Roadmap() {
      return (
          <>
-            <Text fontSize="6xl" fontWeight="bold" textAlign="Center" mt="10vh">RoadMap</Text>
+           <Text
+        bgGradient="linear(to-l, orange, red)"
+        bgClip="text"
+        fontSize="6xl"
+        fontWeight="extrabold"
+        fontStyle={"italic"}
+        fontFamily={"heading"}
+        textAlign="Center"
+        textShadow={"1.5px 1.5px orange"}
+        mt="10vh"
+      >RoadMap</Text>
             <Container maxW="container.lg" centerContent mt="10vh" flex={3} >
                 <Text fontSize="2xl" textAlign="left" mt="5vh">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Tempor commodo ullamcorper a lacus vestibulum sed. Leo vel fringilla est ullamcorper. Tortor at auctor urna nunc. Lorem ipsum dolor sit amet. Et malesuada fames ac turpis egestas. Amet est placerat in egestas erat. Adipiscing elit ut aliquam purus sit amet. Convallis aenean et tortor at risus viverra. Luctus accumsan tortor posuere ac. Neque ornare aenean euismod elementum nisi quis eleifend. Ac turpis egestas integer eget aliquet nibh praesent. Diam maecenas sed enim ut sem viverra aliquet eget sit.

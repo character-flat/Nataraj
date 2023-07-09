@@ -1,26 +1,20 @@
 import React from 'react'
 import Navbar from './components/navbar/navbar';
-import { Flex} from '@chakra-ui/react';
+import {Flex} from '@chakra-ui/react';
 import Footer from './components/Footer/footer';
 import Content from './components/Content/content';
-import {BrowserRouter } from 'react-router-dom';
-
-
-
-
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
-    
     <Flex direction="column" flex="1">
       <Navbar/>
       <BrowserRouter >
-      <Content/>
+        <Content/>
       </BrowserRouter>
       <Footer />  
     </Flex>
-    
-    );
+  );
 
     // return (
     //   <Router>

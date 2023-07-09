@@ -1,4 +1,4 @@
-import {Box, Heading} from '@chakra-ui/react'
+import {Box, Heading, Text} from '@chakra-ui/react'
 import React from 'react'
 
 export default function Card(props) {
@@ -22,8 +22,12 @@ export default function Card(props) {
             >
                 {props.title}
             </Heading>
-
+            <br/>
+            <Text
+            fontFamily={"serif"}
+            >
             {props.children}
+            </Text>
 
         </Box>
     )

@@ -1,15 +1,58 @@
-import { Text, Image, Container } from "@chakra-ui/react";
-export default function Achievements() {
-     return (
-         <>
-            <Text fontSize="6xl" fontWeight="bold" textAlign="Center" mt="10vh">About Us</Text>
-            <Container maxW="container.lg" centerContent mt="10vh" flex={3} >
-                <Text fontSize="2xl" textAlign="left" mt="5vh">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Tempor commodo ullamcorper a lacus vestibulum sed. Leo vel fringilla est ullamcorper. Tortor at auctor urna nunc. Lorem ipsum dolor sit amet. Et malesuada fames ac turpis egestas. Amet est placerat in egestas erat. Adipiscing elit ut aliquam purus sit amet. Convallis aenean et tortor at risus viverra. Luctus accumsan tortor posuere ac. Neque ornare aenean euismod elementum nisi quis eleifend. Ac turpis egestas integer eget aliquet nibh praesent. Diam maecenas sed enim ut sem viverra aliquet eget sit.
+import { Text, Image, Container, Flex, Stack } from "@chakra-ui/react";
 
-Pretium vulputate sapien nec sagittis aliquam malesuada. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Arcu odio ut sem nulla pharetra diam sit amet nisl. Sit amet commodo nulla facilisi. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Ut sem nulla pharetra diam sit amet nisl. Magna fermentum iaculis eu non. Varius morbi enim nunc faucibus. Lorem donec massa sapien faucibus et molestie ac feugiat. Amet cursus sit amet dictum. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.                    </Text>
-                <Image src="https://source.unsplash.com/random/800x600" alt="random image" mt="5vh" />
-            </Container>
-         </>
-     );
- }
+import img from "./images/lord-nataraj.jpeg";
+import img2 from "../../../assets/images/inst.jpg"
+import "./style.css";
+export default function Achievements() {
+  return (
+    <>
+      <Text
+        bgGradient="linear(to-l, orange, red)"
+        bgClip="text"
+        fontSize="6xl"
+        fontWeight="extrabold"
+        fontStyle={"italic"}
+        fontFamily={"heading"}
+        textAlign="Center"
+        textShadow={"1.5px 1.5px orange"}
+        mt="10vh"
+      >
+        ABOUT US
+      </Text>
+      <Container
+        maxW="container.lg"
+        centerContent
+        mt="10vh"
+        flex={3}
+        color={"white"}
+      >
+    <Flex direction="row" flexWrap="wrap" justifyContent="space-around" alignItems="center">
+        <Text fontSize="2xl" textAlign="left" mt="5vh" flex={1}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
+            tellus in hac habitasse platea dictumst. Tempor commodo ullamcorper
+            a lacus vestibulum sed. Leo vel fringilla est ullamcorper. Tortor
+            at auctor urna nunc. Lorem ipsum dolor sit amet. Et malesuada fames
+            ac turpis egestas. Amet est placerat in egestas erat. Adipiscing
+        </Text>
+        <Image src={img} alt="random image" mt="5vh" flex={1} />
+        </Flex>    
+        
+       
+        <Text fontSize="6xl" textAlign="left" mt="5vh" flex={1} >
+          Our Instructor
+        </Text>
+        <Stack direction="row" flexWrap="wrap" justifyContent="space-around" alignItems="center">
+          <Text fontSize="2xl" textAlign="left" mt="1vh" flex={1}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
+            </Text>
+        <Image src={img2} alt="random image" boxSize='450px' borderRadius={"full"} />
+        </Stack>
+      </Container>
+      <br />
+      <br />
+      <br />
+    </>
+  );
+}

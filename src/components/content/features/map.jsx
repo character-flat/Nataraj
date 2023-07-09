@@ -1,5 +1,5 @@
 import "./map.css"
-
+import { Text, Image, Container } from "@chakra-ui/react";
 export default function Map() {
     return (
       <div
@@ -19,24 +19,17 @@ export default function Map() {
           allowFullScreen=""
           loading="lazy"
         ></iframe>
-        <p
         
-          style={{
-            color: "white",
-            fontSize: "20px",
-            fontWeight: "bold",
-            textAlign: "center",
-            fontFamily: "sans-serif",
-            textShadow: "2px 2px black",
-            maxWidth: "100%",
-            padding: "0 10px",
-          }}
-        >
-          Contact us at: 94480 0000 <br />
-          email us at: ajkdj@dalakjl.com<br />
-          Nataraj sangeeta nritya niketana<br />
-          9th Main Rd, Vidayagiri, Bagalkote, Karnataka 587102
-        </p>
+        <Container maxW="container.lg" centerContent mt="10vh" flex={3} >
+        <Text fontSize="2xl" textAlign="left" mt="5vh">
+            Call Us at: <a href="tel:944800000">944800000</a> <br />
+            Email us at: <a href="mailto:NatarajInstitute@gmail.com">NatarajInstitute@gmail.com</a> <br />
+            <b>Nataraja Sangeeta Nritya Niketana </b> <br />
+            9th Main Rd, <br />
+            Vidyagiri, Bagalkote, <br />
+            Karnataka 587102
+         </Text>
+    </Container>
       </div>
     );
   }

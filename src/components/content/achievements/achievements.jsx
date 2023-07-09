@@ -1,14 +1,46 @@
-import { Text, Image, Container } from "@chakra-ui/react";
-export default function About() {
+import { Text, Image, Container, Card, CardBody } from "@chakra-ui/react";
+import img1 from "./photos/1.jpg";
+import img2 from "./photos/2.jpg";
+import img3 from "./photos/3.jpg";
+import img4 from "./photos/4.jpg";
+import img5 from "./photos/5.jpg";
+import img6 from "./photos/6.jpg";
+import img7 from "./photos/7.jpg";
+import img8 from "./photos/8.jpg";
+var imgArray = [img1, img2, img3, img4, img5, img6, img7, img8];
+
+function ACard(props) {
+    return (
+        <Card maxW="s" margin={3}>
+          <CardBody>
+            <Image src={props.imgs} borderRadius="lg" />
+          </CardBody>
+        </Card>
+    );
+}
+export default function Achievements() {
      return (
          <>
-            <Text fontSize="6xl" fontWeight="bold" textAlign="Center" mt="10vh">Our Achievements</Text>
+            <Text
+        bgGradient="linear(to-l, orange, red)"
+        bgClip="text"
+        fontSize="6xl"
+        fontWeight="extrabold"
+        fontStyle={"italic"}
+        fontFamily={"heading"}
+        textAlign="Center"
+        textShadow={"1.5px 1.5px orange"}
+        mt="10vh"
+      >OUR ACHIEVEMENTS</Text>
             <Container maxW="container.lg" centerContent mt="10vh" flex={3} >
-                <Text fontSize="2xl" textAlign="left" mt="5vh">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Tempor commodo ullamcorper a lacus vestibulum sed. Leo vel fringilla est ullamcorper. Tortor at auctor urna nunc. Lorem ipsum dolor sit amet. Et malesuada fames ac turpis egestas. Amet est placerat in egestas erat. Adipiscing elit ut aliquam purus sit amet. Convallis aenean et tortor at risus viverra. Luctus accumsan tortor posuere ac. Neque ornare aenean euismod elementum nisi quis eleifend. Ac turpis egestas integer eget aliquet nibh praesent. Diam maecenas sed enim ut sem viverra aliquet eget sit.
-
-Pretium vulputate sapien nec sagittis aliquam malesuada. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Arcu odio ut sem nulla pharetra diam sit amet nisl. Sit amet commodo nulla facilisi. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Ut sem nulla pharetra diam sit amet nisl. Magna fermentum iaculis eu non. Varius morbi enim nunc faucibus. Lorem donec massa sapien faucibus et molestie ac feugiat. Amet cursus sit amet dictum. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.                    </Text>
-                <Image src="https://source.unsplash.com/random/800x600" alt="random image" mt="5vh" />
+               <ACard imgs={imgArray[0]} />
+                <ACard imgs={imgArray[1]} />
+                <ACard imgs={imgArray[2]} />
+                <ACard imgs={imgArray[3]} />
+                <ACard imgs={imgArray[4]} />
+                <ACard imgs={imgArray[5]} />
+                <ACard imgs={imgArray[6]} />
+                <ACard imgs={imgArray[7]} />
             </Container>
          </>
      );
