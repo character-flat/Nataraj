@@ -23,7 +23,7 @@ export default function Map() {
         <Container maxW="container.lg" centerContent mt="10vh" flex={3} >
         <Text fontSize="2xl" textAlign="left" mt="5vh">
             Call Us at: <a href="tel:944800000">944800000</a> <br />
-            Email us at: <a href="mailto:NatarajInstitute@gmail.com">NatarajInstitute@gmail.com</a> <br />
+            Email us at: <a href="mailto:NatarajaInstitute@gmail.com">NatarajaInstitute@gmail.com</a> <br />
             <b>Nataraja Sangeeta Nritya Niketana </b> <br />
             9th Main Rd, <br />
             Vidyagiri, Bagalkote, <br />
