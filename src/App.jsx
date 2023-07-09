@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar/navbar';
 import {Flex} from '@chakra-ui/react';
 import Footer from './components/Footer/footer';
-import Content from './components/Content/content';
+import Content from './components/content/contentpage';
 import {BrowserRouter} from 'react-router-dom';
 
 export default function App() {
