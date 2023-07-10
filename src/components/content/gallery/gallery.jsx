@@ -10,13 +10,13 @@ import img7 from "./photos/7.jpg";
 var imgArray = [img1, img2, img3, img4, img5, img6, img7];
 
 function GalleryCard(props) {
-    return (
-        <Card maxW="s" margin={3}>
-          <CardBody>
-            <Image src={props.imgs} borderRadius="lg" />
-          </CardBody>
-        </Card>
-    );
+  return (
+    <Card maxW="s" margin={3}>
+      <CardBody>
+        <Image src={props.imgs} borderRadius="lg" />
+      </CardBody>
+    </Card>
+  );
 }
 
 export default function Gallery() {
@@ -35,7 +35,7 @@ export default function Gallery() {
       >
         GALLERY
       </Text>
-      <Container maxW="container.lg" centerContent mt="10vh" flex={1} >
+      <Container maxW="container.lg" centerContent mt="10vh" flex={1}>
         <GalleryCard imgs={imgArray[0]} />
         <GalleryCard imgs={imgArray[1]} />
         <GalleryCard imgs={imgArray[2]} />
@@ -43,7 +43,6 @@ export default function Gallery() {
         <GalleryCard imgs={imgArray[4]} />
         <GalleryCard imgs={imgArray[5]} />
         <GalleryCard imgs={imgArray[6]} />
-    
       </Container>
     </>
   );

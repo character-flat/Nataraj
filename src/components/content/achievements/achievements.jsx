@@ -10,18 +10,18 @@ import img8 from "./photos/8.jpg";
 var imgArray = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 function ACard(props) {
-    return (
-        <Card maxW="s" margin={3}>
-          <CardBody>
-            <Image src={props.imgs} borderRadius="lg" />
-          </CardBody>
-        </Card>
-    );
+  return (
+    <Card maxW="s" margin={3}>
+      <CardBody>
+        <Image src={props.imgs} borderRadius="lg" />
+      </CardBody>
+    </Card>
+  );
 }
 export default function Achievements() {
-     return (
-         <>
-            <Text
+  return (
+    <>
+      <Text
         bgGradient="linear(to-l, orange, red)"
         bgClip="text"
         fontSize="6xl"
@@ -31,17 +31,19 @@ export default function Achievements() {
         textAlign="Center"
         textShadow={"1.5px 1.5px orange"}
         mt="10vh"
-      >OUR ACHIEVEMENTS</Text>
-            <Container maxW="container.lg" centerContent mt="10vh" flex={3} >
-               <ACard imgs={imgArray[0]} />
-                <ACard imgs={imgArray[1]} />
-                <ACard imgs={imgArray[2]} />
-                <ACard imgs={imgArray[3]} />
-                <ACard imgs={imgArray[4]} />
-                <ACard imgs={imgArray[5]} />
-                <ACard imgs={imgArray[6]} />
-                <ACard imgs={imgArray[7]} />
-            </Container>
-         </>
-     );
- }
+      >
+        OUR ACHIEVEMENTS
+      </Text>
+      <Container maxW="container.lg" centerContent mt="10vh" flex={3}>
+        <ACard imgs={imgArray[0]} />
+        <ACard imgs={imgArray[1]} />
+        <ACard imgs={imgArray[2]} />
+        <ACard imgs={imgArray[3]} />
+        <ACard imgs={imgArray[4]} />
+        <ACard imgs={imgArray[5]} />
+        <ACard imgs={imgArray[6]} />
+        <ACard imgs={imgArray[7]} />
+      </Container>
+    </>
+  );
+}

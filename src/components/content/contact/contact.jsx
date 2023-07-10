@@ -2,9 +2,9 @@ import { Text, Image, Container } from "@chakra-ui/react";
 import Map from "../features/map";
 
 export default function Contact() {
-     return (
-         <>
-            <Text
+  return (
+    <>
+      <Text
         bgGradient="linear(to-l, orange, red)"
         bgClip="text"
         fontSize="7xl"
@@ -14,9 +14,11 @@ export default function Contact() {
         textAlign="Center"
         textShadow={"1.5px 1.5px orange"}
         mt="10vh"
-      >Please Feel Free To Contact Us </Text>
-         
-            <Map />
-         </>
-     );
- }
+      >
+        Please Feel Free To Contact Us{" "}
+      </Text>
+
+      <Map />
+    </>
+  );
+}
